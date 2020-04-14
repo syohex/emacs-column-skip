@@ -1,0 +1,10 @@
+.PHONY : test
+
+EMACS ?= emacs
+
+LOADPATH = -L .
+
+test:
+	$(EMACS) -Q -batch $(LOADPATH) \
+		-l test/test-column-skip.el \
+		-f ert-run-tests-batch-and-exit

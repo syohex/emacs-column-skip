@@ -79,6 +79,7 @@ endfunction
       (search-forward "function!")
       (back-to-indentation)
       (column-skip-forward 1)
+      (should (= (current-column) 0))
       (should (string= (thing-at-point 'word) "endfunction")))
 
     (save-excursion

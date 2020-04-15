@@ -1,4 +1,4 @@
-# column-skip.el
+# column-skip.el ![](https://github.com/syohex/emacs-column-skip/workflows/CI/badge.svg)
 
 Emacs port of Vim extension [columnskip.vim](https://github.com/tyru/columnskip.vim)
 
